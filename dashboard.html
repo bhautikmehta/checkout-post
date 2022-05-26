@@ -1,0 +1,1051 @@
+
+<script type="text/javascript">
+var _E_sfCommonDeleteConfMsg = "Are you sure you want to delete the {0}? This action cannot be reversed.";
+var _E_sfCommonDeleteConfTitle = "Delete {0}?";
+var _E_sfCommonDeleteConfOkBtn = "Delete {0}";
+var _E_sfCommonDeleteConfCancelBtn = "Cancel";
+var _E_funnel = "funnel";
+var _E_browserNotSupportFileReader = "This browser does not support FileReader.";
+var _E_imageFormatErr = "Image file is invalid. Make sure the format is valid (jpg/jpeg/png/gif/bmp) and the image isn\'t corrupted.";
+var _E_tryAgain = "Sorry, please try again.";
+var _E_plzEnterName = "Please enter name.";
+var _E_plzEnterUrl = "Please enter URL.";
+var _E_plzEnterLogo = "Please enter logo.";
+var _E_app = "PreConvert";
+var _E_other = "Store";
+var _E_Enable = "Enable";
+var _E_Disable = "Disable";
+var _E_accepted = "Accepted";
+var _E_declined = "Declined";
+var _E_purchased = "Converted";
+
+var _E_activate = "Active PreConvert";
+var _E_activated = "PreConvert activated";
+
+/* All range calander */
+/* custom calander ranges */
+var _E_today = "Today";
+var _E_yesterday = "Yesterday";
+var _E_last7Days = "Last 7 days";
+var _E_last30Days = "Last 30 days";
+var _E_last10Days = "Last 10 days";
+var _E_thisMonth = "This month";
+var _E_lastMonth = "Last month";
+var _E_custom = "Custom";
+
+/* calander Button */
+var _E_apply = "Apply";
+var _E_cancel = "Cancel";
+var _E_save = "Save";
+var _E_add = "Add";
+
+var _E_edit = "Edit";
+var _E_customize = "Customize";
+
+var _E_from = "From";
+var _E_to = "To";
+
+/* calander days */
+var _E_cal_su = "Su";
+var _E_cal_mo = "Mo";
+var _E_cal_tu = "Tu";
+var _E_cal_we = "We";
+var _E_cal_th = "Th";
+var _E_cal_fr = "Fr";
+var _E_cal_sa = "Sa";
+
+/* calander months */
+var _E_january = "January";
+var _E_february = "February";
+var _E_march = "March";
+var _E_april = "April";
+var _E_may = "May";
+var _E_june = "June";
+var _E_july = "July";
+var _E_august = "August";
+var _E_september = "September";
+var _E_october = "October";
+var _E_november = "November";
+var _E_december = "December";
+
+/* App enable/disable button*/
+var _E_bt_disable = "Disable PreConvert";
+var _E_bt_enable = "Enable PreConvert";
+
+/* Common messages */
+var _E_something_wrong = "Something went wrong";
+
+var _E_select_product= "Select product";
+var _E_placeholder = "Type something";
+var _E_title_editor_text = "People who bought this also bought....";
+
+var _E_App_install_info = "You must have {0} installed on your store in order for this integration to work. If you don\'t have the app installed, star reviews will not be displayed. {1} Install {2}";
+
+/* Tooltip templated */
+var _E_NEW_DASHBOARD = "The new dashboard";
+var _E_UPSELL_EDITOR = "Offer editor";
+var _E_HOW_WOULD = "How would you rate your experience so far?";
+var _E_THANK_YOU = "Thank you for your feedback";
+    var _E_REVIEW_ON_APP = "If that\'s not a reason to celebrate, we don\'t know what is! Celebrate with us by leaving a review on the app store";
+    var _E_LEAVE_US_REIEW = "Leave us a review";
+
+/* Other */
+var _E_SELECT_VARIANT = "Select default variant";
+var _E_TIMER_PAST_BG_COLOR = "Time past background color";
+var _E_TIMER_LEFT_BG_COLOR = "Time left background color";
+var _E_BUTTON_TEXT_COLOR = "Timer text color";
+var _E_TIMER_BG_COLOR = "Timer background color";
+var _E_TIMER_TEXT_COLOR = "Timer title text color";
+var _E_BILING_ADD_ORDER = "per additional order";
+var _E_BILING_HEADER_DEFAULT = "Our Pricing";
+var _E_BILING_HEADER_ENTERPRISE = "Enterprise";
+var _E_CONTACT_MSG = "Contact sales";
+var _E_CONTACT_BILLING_MSG = " for custom pricing.";
+var _E_BILLING_ORD_MSG = "How many monthly orders does your store have?";
+var _E_PREVIEW_EXPIRED_OFFER = "Preview expired offer";
+var _E_PREVIEW_LIVE_OFFER = "Preview live offer";
+var _E_PUBLISH = "Publish";
+var _E_DISCOUNT_AMOUNT = "Discount value is required";
+var _E_OFFER_SAVED_SUCCESS = "Offer saved successfully.";
+var _E_OPERATION_FAILED = "Operation failed some how.";
+
+/* Offer related text */
+var _E_OFFER_NAME = "Offer Name";
+var _E_SAVE = "Save";
+</script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>PreConvert | atmiya-preconvert.myshopify.com</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" media="screen" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/polaris.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/custom_client.css?v=1624513027" />
+        <link rel="stylesheet" media="screen" href="assets/css/daterangepicker.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/spectrum.css" />
+        <link rel="stylesheet" media="screen" href="assets/css/select2.min.css" />
+        <link rel="stylesheet" href="assets/css/video.popup.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/tippy.css" rel="stylesheet">
+                <!-- Js -->
+        <script type="text/javascript">var shop = 'atmiya-preconvert.myshopify.com';
+            var mode = 'local';
+            var SITE_URL = 'http://localhost/stilyo-preconvert/preconvert/';
+            var ABS_PATH = "D:/wamp64/www/stilyo-preconvert/preconvert";
+            var ABOVE_X_ROI = 200;
+            var ABOVE_X_CVR = 1;
+            var DISPLAY_REVIEW = "none";
+            var REVIW_RATING = Number('');
+            var SITE_REVIEW_URL = "";
+            var review_rate = Number('');
+            var review_popup_status = '1';
+            var app_status = '1';
+            var rct_store_client_id = '23';
+            var default_update_rate_status = '0';
+            var default_share_app_status = '0';
+        </script>
+        <!-- new version used by IW0027 for confetti -->
+        <!-- IW0030 when you changed jQuery with latest version please check in triggerbase birthday picker is initialized or not because in latest version it's create issue. -->
+        <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/daterangepicker.js"></script>
+        <script src="assets/js/select2.full.js"></script>
+        <script src="assets/js/jquery.nestable.js"></script>
+        <script src="assets/js/highcharts.js"></script>
+        <script src="assets/js/video.popup.js"></script>
+        <script src="assets/js/common-custom.js"></script>
+                
+                <script src="assets/js/spectrum.js"></script>
+        <script src="assets/js/custom.js?v=1625226094&scid=TU9FTXkxK2oxU3NvTkdFTmNtZVdMQT09"></script>
+        <!--Tool tips-->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/tippy.min.js"></script>
+
+        <!-- Common ajax data pass for Authentication token -->
+        <script>
+            $.ajaxSetup({
+                headers: {"Authentication": "$2y$10$8vGSATFzqFIdjg5V9kHZSOPOdQUrQl190cyRkI2Gl0V4qtM7CGkQ."}
+            });
+        </script>
+    </head>
+    <body>
+
+            <div class="Polaris-Page headerButton setPaddingAlign polaris_css" style="margin-top: 1.6rem;">
+            <a href="http://localhost/stilyo-preconvert/preconvert/client/index.php?without_shopify=1&shop=atmiya-preconvert.myshopify.com" class="Polaris-Button header_button rightMargin_button">
+                <span class="Polaris-Button__Content"><span>Dashboard </span></span>
+            </a>
+            <a href="http://localhost/stilyo-preconvert/preconvert/client/manage_funnels.php?shop=atmiya-preconvert.myshopify.com" class="Polaris-Button header_button rightMargin_button">
+                <span class="Polaris-Button__Content"><span>Funnels</span></span>
+            </a>
+<!--            <a href="http://localhost/stilyo-preconvert/preconvert/client/thankyou_page_dashboard.php?without_shopify=1&shop=atmiya-preconvert.myshopify.com" class="Polaris-Button header_button rightMargin_button">
+                <span class="Polaris-Button__Content"><span>Thank you pages</span></span>
+            </a>-->
+            <button type="button" value="" class="Polaris-Button rightMargin_button" data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" data-popover-id="setion-list" tabindex="0" aria-controls="Popover11" aria-owns="Popover11" aria-haspopup="true" aria-expanded="false">
+                <span class="Polaris-Button__Content"><span>Settings</span>
+                    <span class="Polaris-Button__Icon"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20" focusable="false" aria-hidden="true"><path d="M5 8l5 5 5-5z" fill-rule="evenodd"></path></svg></span></span></span>
+            </button>
+            <div class="Polaris-Popover__Wrapper" style="display: none">
+                <div id="popover-content-setion-list" tabindex="-1" class="Polaris-Popover__Content">
+                    <ul class="action-list-menu">
+                        <li><a href="http://localhost/stilyo-preconvert/preconvert/client/settings.php?without_shopify=1&shop=atmiya-preconvert.myshopify.com"><button class="Polaris-ActionList__Item"><div class="Polaris-ActionList__Content popover-font">General settings</div></button></a></li>
+                        <li><a href="http://localhost/stilyo-preconvert/preconvert/client/affiliates.php?without_shopify=1&shop=atmiya-preconvert.myshopify.com"><button class="Polaris-ActionList__Item"><div class="Polaris-ActionList__Content popover-font">Referral program</div></button></a></li>
+                        <li><a href="http://localhost/stilyo-preconvert/preconvert/client/manage_activity.php?without_shopify=1&shop=atmiya-preconvert.myshopify.com"><button class="Polaris-ActionList__Item"><div class="Polaris-ActionList__Content popover-font">Activity report </div></button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <div class="polaris_css dashbord_css">
+        <div class="Polaris-Page Polaris-Page--fullWidth">
+                        <link href="assets/css/menu-drag-drop.css" rel="stylesheet" type="text/css"/>
+            <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css"/>
+                        <div class="Polaris-Layout custome_margin_zero custome_margin_zero_top themeBanner" style="display: none;">
+                <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">
+                    <div class="Polaris-Page primary_page">
+                        <div class="Polaris-Banner Polaris-Banner--statusWarning Polaris-Banner--hasDismiss Polaris-Banner--withinPage" tabindex="0" role="alert" aria-live="polite" aria-labelledby="PolarisBanner4Heading" aria-describedby="PolarisBanner4Content" style="display: none;">
+                            <div class="Polaris-Banner__Dismiss">
+                                <button class="Polaris-Button Polaris-Button--plain Polaris-Button--iconOnly dismissThemeBanner underReviewBanner" aria-label="Dismiss notification" type="button">
+                                    <span class="Polaris-Button__Content">
+                                        <span class="Polaris-Button__Icon">
+                                            <span class="Polaris-Icon">
+                                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="Polaris-Banner__Ribbon">
+                                <span class="Polaris-Icon Polaris-Icon--colorWarning Polaris-Icon--applyColor">
+                                    <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0zM9 6a1 1 0 1 1 2 0v4a1 1 0 1 1-2 0V6zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="Polaris-Banner__ContentWrapper" style="display: none;">
+                                <div class="Polaris-Banner__Heading">
+                                    <p class="Polaris-Heading">We're working on your theme - <strong>Simple</strong>!</p>
+                                </div>
+                                <div class="Polaris-Banner__Content">
+                                    <p>Our developers are working on supporting your theme at the moment. This process can take up to 2 business days.</p>
+                                    <br>
+                                    <p>We will let you know once it's ready at: atmiya.kolsawala@identixweb.in</p>
+                                </div>
+                            </div>
+                            <div class="Polaris-Banner__ContentWrapper" style="display: none;">
+                                <div class="Polaris-Banner__Heading">
+                                    <p class="Polaris-Heading">We noticed you updated your theme - <strong>Simple</strong>!</p>
+                                </div>
+                                <div class="Polaris-Banner__Content">
+                                    <p>Our developers are working on supporting your theme at the moment. This process can take up to 2 business days.</p>
+                                    <br>
+                                    <p>We will let you know once it's ready at: atmiya.kolsawala@identixweb.in</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Polaris-Banner Polaris-Banner--statusInfo Polaris-Banner--hasDismiss Polaris-Banner--withinPage" tabindex="0" role="alert" aria-live="polite" aria-labelledby="PolarisBanner4Heading" aria-describedby="PolarisBanner4Content" style="display: none;">
+                            <div class="Polaris-Banner__Dismiss">
+                                <button class="Polaris-Button Polaris-Button--plain Polaris-Button--iconOnly dismissThemeBanner informationBanner" aria-label="Dismiss notification" type="button">
+                                    <span class="Polaris-Button__Content">
+                                        <span class="Polaris-Button__Icon">
+                                            <span class="Polaris-Icon">
+                                                <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="Polaris-Banner__Ribbon">
+                                <span class="Polaris-Icon Polaris-Icon--colorHighlight Polaris-Icon--applyColor">
+                                    <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 20c5.514 0 10-4.486 10-10S15.514 0 10 0 0 4.486 0 10s4.486 10 10 10zm1-6a1 1 0 1 1-2 0v-4a1 1 0 1 1 2 0v4zm-1-9a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="Polaris-Banner__ContentWrapper" style="display: none;">
+                                <div class="Polaris-Banner__Heading">
+                                    <p class="Polaris-Heading">Your theme, Simple, is now fully supported by PreConvert.</p>
+                                </div>
+                                <div class="Polaris-Banner__Content">
+                                    <p>Everything should work as expected.</p>
+                                </div>
+                            </div>
+                            <div class="Polaris-Banner__ContentWrapper" style="display: none;">
+                                <div class="Polaris-Banner__Heading">
+                                    <p class="Polaris-Heading">We noticed you updated your theme to - <strong>Simple</strong>.</p>
+                                </div>
+                                <div class="Polaris-Banner__Content">
+                                    <p>No worries! Simple is already supported by PreConvert and everything should work as expected.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner section start -->
+                        <div class="postion-reletive custom-new-top-bar">
+                <div class="custome_margin_zero_top">
+                                        <!-- Banner section end -->
+                    <div class="Polaris-Layout margin-bot-20px">
+                        <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">
+                            <div class="Polaris-Page primary_page">
+                                <div class="Polaris-Page-Header Polaris-Page-Header--hasActionMenu Polaris-Page-Header--mobileView Polaris-Page-Header--noBreadcrumbs Polaris-Page-Header--mediumTitle polaris-padding-bottom-threezero border-bottom-poaris custome_padding_left_right custome_padding_top">
+                                    <div class="Polaris-Page-Header__Row polaris-custom-wrap">
+                                        <div class="Polaris-Page-Header__TitleWrapper ">
+                                            <div>
+                                                <div class="Polaris-Header-Title__TitleAndSubtitleWrapper custome_subtitle polaris-justify-space-between polaris-date-text">
+                                                    <h1 class="Polaris-DisplayText--sizeLarge custom-width-responsive">Pre purchase funnels</h1>
+                                                    <span class="Polaris-TextStyle--variationSubdued" id="dateInText"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Polaris-Stack__Item">
+                                            <div class="Polaris-ButtonGroup">
+                                                <!--Date Range Picker-->
+                                                <div class="Polaris-ButtonGroup__Item Polaris-ButtonGroup__Item--plain">
+                                                    <input type="hidden" name="daterangeTempImp" id="daterange"
+                                                           value="2021-06-08 To 2021-07-07">
+                                                    <button type="button"
+                                                            class="Polaris-Button report-daterangepickerTempImp"
+                                                            aria-haspopup="true" aria-expanded="true">
+                                                <span class="Polaris-Button__Content">
+                                                    <span class="Polaris-Button__Icon">
+                                                        <span class="Polaris-Icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 2H15V1C15 0.734784 14.8946 0.48043 14.7071 0.292893C14.5196 0.105357 14.2652 0 14 0C13.7348 0 13.4804 0.105357 13.2929 0.292893C13.1054 0.48043 13 0.734784 13 1V2H6V1C6 0.734784 5.89464 0.48043 5.70711 0.292893C5.51957 0.105357 5.26522 0 5 0C4.73478 0 4.48043 0.105357 4.29289 0.292893C4.10536 0.48043 4 0.734784 4 1V2H2.5C1.7 2 1 2.7 1 3.5V18.5C1 19.3 1.7 20 2.5 20H17.5C18.3 20 19 19.3 19 18.5V3.5C19 2.7 18.3 2 17.5 2ZM3 18H17V8H3V18Z" fill="#5C5F62"/></g><defs><clipPath id="clip0"><rect width="20" height="20" fill="white"/></clipPath></defs></svg>                                                        </span>
+                                                    </span>
+                                                    <span id="dateRangeSpanTempImp">Last 30 days</span>
+                                                </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Polaris-Layout margin-top-0px margin-bot-15px">
+                        <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">
+                            <div class="Polaris-Page primary_page">
+                                <div class="Polaris-Page-Header Polaris-Page-Header--hasActionMenu Polaris-Page-Header--mobileView Polaris-Page-Header--noBreadcrumbs Polaris-Page-Header--mediumTitle polaris-padding-bottom-onefive custome_padding_left_right custome_padding_top_zero">
+                                    <div class="Polaris-Page-Header__Row">
+                                        <div class="Polaris-Page-Header__TitleWrapper">
+                                            <div>
+                                                <div class="Polaris-Header-Title__TitleAndSubtitleWrapper">
+                                                    <h1 class="Polaris-Header-Title">
+                                                        Top funnels                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Polaris-Page-Header__RightAlign custome_margin_zero custome_margin_media">
+                                            <div class="Polaris-Page-Header__Actions">
+                                                <div class="Polaris-Page-Header__PrimaryActionWrapper">
+                                                    <button class="Polaris-Button Polaris-Button--primary explore-free-themes "
+                                                            type="button" data-toggle="modal"
+                                                            data-target="#free_themes_model" data-backdrop="static"
+                                                            data-keyboard="false" name="explore_themes"><span
+                                                                class="Polaris-Button__Content"><span
+                                                                    class="Polaris-Button__Text">Create a new funnel</span></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Polaris-Layout custom-padding-bottom-onefive">
+                        <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">
+                            <div class="Polaris-Page primary_page">
+                                <div class="template_listing_block">
+                                    <div class="Polaris-Card dashboard-funnel-list">
+                                        <div class="menu-drag-drop menu-layout-item top-funnel-list">
+                                            <section class="menu-card menu-structure menu-responsive">
+                                                <!-- Menu header section start -->
+                                                <div class="menu-header">
+                                                    <div class="menu-item">
+                                                        <div class="menu-title funnel-Priority-title-wt">
+                                                            Priority                                                        </div>
+                                                        <div class="dd-content menu-title funnel-title-wt">
+                                                            Funnel name                                                        </div>
+                                                        <div class="menu-title funnel-imp-wt-finl"
+                                                             style=" display: flex;">
+                                                            Impressions                                                        </div>
+                                                        <div class="menu-title funnel-attached-offer-wt-new">
+                                                            Accepted offers                                                        </div>
+                                                        <div class="menu-title funnel-cvr-wt">
+                                                            CVR                                                        </div>
+                                                        <div class="menu-title funnel-revenue-wt">
+                                                            Revenue                                                        </div>
+                                                        <div class="menu-title funnel-status-wt">
+                                                            Status                                                        </div>
+                                                        <div class="menu-title funnel-action-wt">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Menu header section End -->
+                                                <div class="menu-card-section">
+                                                    <div class="menu-type-container dd" id="nestable">
+                                                        <ol class="next-list--divided dd-list funnel-list"
+                                                            id="itemForMainMenu">
+                                                        </ol>
+                                                        <div class="dd-empty" style="display: none;"></div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                                                                    <div class="Polaris-DataTable__Footer"
+                                                 style="display: flex;width: 100%;justify-content: center;">
+                                                <a class="Polaris-Button view_more_button viewMoreTemplate"
+                                                   href="manage_funnels.php?shop=atmiya-preconvert.myshopify.com"><span
+                                                            class="Polaris-Button__Content"><span>View more</span></span></a>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--first layout start-->
+                    <div class="Polaris-Layout margin-top-0px">
+                        <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block polaris-min-width-100">
+                            <div class="Polaris-Page primary_page">
+                                <div class="Polaris-Page-Header custome_padding_left_right custome_padding_left_right_bottom_zero">
+                                    <h1 class="Polaris-Header-Title analytics-heading">Analytics</h1>
+                                </div>
+                            </div>
+                            <div class="Polaris-Layout layout-style-preconvert custometopMargin">
+                                <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">
+                                    <div class="Polaris-Page primary_page ">
+                                        <div class="Polaris-Layout custome_layout_three">
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeChart custome_margin_top_two_zeero">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header">
+                                                        <div class="TooltipRPParentDiv">
+                                                            <h2 class="Polaris-Heading custome_chart_heading">Revenue generated</h2>
+                                                                                                                            <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                                      data-tippy-content="The percentage represents PreConvert's addition to your store's revenue"
+                                                                      data-tippy-theme="light" data-tippy-arrow="false"
+                                                                      data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            viewBox="0 0 20 20"><path
+                                                                                fill-rule="evenodd"
+                                                                                d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                fill="#5C5F62"></path></svg></span>
+                                                                                                                    </div>
+                                                        <div class="Polaris-Stack__Item report-title-preconvert">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge revenueTotal custome_chart_title"></p>
+                                                                </div>
+                                                                <div class="Polaris-Stack__Item">
+                                                                <span class="Polaris-Button__Content">
+                                                                    <span class="Polaris-Button__Icon">
+                                                                        <span class="Polaris-Icon">
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="Polaris-DisplayText Polaris-DisplayText--sizeMedium Polaris-TextStyle--variationPositive revenuePer custome_chart_title"></span>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <h3 aria-label="Sales over time"
+                                                                class="Polaris-Subheading">Revenue over time</h3>
+                                                        </div>
+                                                        <div id="salesRevenueChart" style="height: 269px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeChart custome_margin_top_two_zeero">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header">
+                                                        <div class="TooltipRPParentDiv">
+                                                            <h2 class="Polaris-Heading custome_chart_heading">Converted offers</h2>
+                                                                                                                            <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                                      data-tippy-content="The percentage represents PreConvert's addition to your store's orders"
+                                                                      data-tippy-theme="light" data-tippy-arrow="false"
+                                                                      data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            viewBox="0 0 20 20"><path
+                                                                                fill-rule="evenodd"
+                                                                                d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                fill="#5C5F62"></path></svg></span>
+                                                                                                                    </div>
+                                                        <div class="Polaris-Stack__Item report-title-preconvert">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge totalAcceptedOffers custome_chart_title"></p>
+                                                                </div>
+                                                                <div class="Polaris-Stack__Item">
+                                                                <span class="Polaris-Button__Content"><span
+                                                                            class="Polaris-Button__Icon"><span
+                                                                                class="Polaris-Icon"></span></span>
+                                                                    <span class="Polaris-DisplayText Polaris-DisplayText--sizeMedium Polaris-TextStyle--variationPositive AcceptedOfferPer custome_chart_title"></span>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <h3 aria-label="Sales over time"
+                                                                class="Polaris-Subheading">Offers Over Time</h3>
+                                                        </div>
+                                                        <div id="numberOfOrderChart" style="height: 269px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Polaris-Layout layout-style-preconvert custometopMargin custome_layout_three">
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeHeight custome_margin_top">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header TooltipRPParentDiv">
+                                                        <h2 class="Polaris-Heading">Active offers</h2>
+                                                                                                                    <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                                  data-tippy-content="Total number of active offers"
+                                                                  data-tippy-theme="light" data-tippy-arrow="false"
+                                                                  data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20"><path fill-rule="evenodd"
+                                                                                                  d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                                  fill="#5C5F62"></path></svg></span>
+                                                                                                            </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge activeOffers"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Polaris-Card__Header polaris-pd-rl-0">
+                                                            <div class="Polaris-Stack Polaris-Stack--alignmentBaseline">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <h2>Funnels</h2>
+                                                                </div>
+                                                                <div class="Polaris-Stack__Item">
+                                                                    <div class="Polaris-ButtonGroup">
+                                                                        <div class="Polaris-ButtonGroup__Item Polaris-ButtonGroup__Item--plain">
+                                                                            <span class="activeFunnels">0</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeHeight custome_margin_top">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header TooltipRPParentDiv">
+                                                        <h2 class="Polaris-Heading">Offer impressions</h2>
+                                                                                                                    <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                                  data-tippy-content="Number of times the funnels is in process, and customer have gone through it"
+                                                                  data-tippy-theme="light" data-tippy-arrow="false"
+                                                                  data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20"><path fill-rule="evenodd"
+                                                                                                  d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                                  fill="#5C5F62"></path></svg></span>
+                                                                                                            </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill funnel-analytic-sec">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge totalOfferImpression"></p>
+                                                                    <div class="polaris-display-icon">
+                                                                        <span class="Polaris-Icon">
+                                                                             <div class="polaris-analytics-icon-success offerSuccessIcon" style="display: none">
+                                                                                <svg viewBox="0 0 20 20"
+                                                                                     class="Polaris-Icon__Svg_375hu"
+                                                                                     focusable="false" aria-hidden="true"><path
+                                                                                            d="M11 17V5.414l3.293 3.293a.999.999 0 1 0 1.414-1.414l-5-5a.999.999 0 0 0-1.414 0l-5 5a.997.997 0 0 0 0 1.414.999.999 0 0 0 1.414 0L9 5.414V17a1 1 0 1 0 2 0z"></path></svg>
+
+                                                                             </div>
+                                                                            <div class="polaris-analytics-icon-critical offerCriticalIcon"
+                                                                                 style="display: none">
+                                                                                <svg viewBox="0 0 20 20"
+                                                                                     xmlns="http://www.w3.org/2000/svg"><path
+                                                                                            d="M10.707 17.707l5-5a.999.999 0 10-1.414-1.414L11 14.586V3a1 1 0 10-2 0v11.586l-3.293-3.293a.999.999 0 10-1.414 1.414l5 5a.999.999 0 001.414 0z"/></svg>
+                                                                            </div>
+                                                                        </span>
+                                                                        <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall totalOfferImpressionCompare custome_smallsize">
+                                                                            0.00%</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Polaris-Card__Header polaris-pd-rl-0">
+                                                            <div class="Polaris-Stack Polaris-Stack--alignmentBaseline">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <h2>Funnel impressions</h2>
+                                                                </div>
+                                                                <div class="Polaris-Stack__Item">
+                                                                    <div class="Polaris-ButtonGroup">
+                                                                        <div class="Polaris-ButtonGroup__Item Polaris-ButtonGroup__Item--plain">
+                                                                            <span class="totalFunnelImpression">0</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Polaris-Layout layout-style-preconvert custometopMargin custome_layout_three">
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeHeight custome_margin_top">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header TooltipRPParentDiv">
+                                                        <h2 class="Polaris-Heading">Accept clicks</h2>
+                                                        <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                              data-tippy-content="Average order value from PreConvert"
+                                                              data-tippy-theme="light" data-tippy-arrow="false"
+                                                              data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20"><path fill-rule="evenodd"
+                                                                                              d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                              fill="#5C5F62"></path></svg></span>
+                                                    </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill funnel-analytic-sec">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge acceptanceFunnelRate"></p>
+                                                                    <div class="polaris-display-icon">
+                                                                    <span class="Polaris-Icon">
+                                                                         <div class="polaris-analytics-icon-success acceptanceRateSuccessIcon" style="display: none">
+                                                                        <svg viewBox="0 0 20 20"
+                                                                             class="Polaris-Icon__Svg_375hu"
+                                                                             focusable="false" aria-hidden="true"><path
+                                                                                    d="M11 17V5.414l3.293 3.293a.999.999 0 1 0 1.414-1.414l-5-5a.999.999 0 0 0-1.414 0l-5 5a.997.997 0 0 0 0 1.414.999.999 0 0 0 1.414 0L9 5.414V17a1 1 0 1 0 2 0z"></path></svg>
+                                                                         </div>
+                                                                        <div class="polaris-analytics-icon-critical acceptanceRateCriticalIcon"
+                                                                             style="display: none">
+                                                                            <svg viewBox="0 0 20 20"
+                                                                                 xmlns="http://www.w3.org/2000/svg"><path
+                                                                                        d="M10.707 17.707l5-5a.999.999 0 10-1.414-1.414L11 14.586V3a1 1 0 10-2 0v11.586l-3.293-3.293a.999.999 0 10-1.414 1.414l5 5a.999.999 0 001.414 0z"/></svg>
+                                                                        </div>
+                                                                    </span>
+                                                                        <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall acceptanceFunnelRateCompare custome_smallsize">
+                                                                            0.00%</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Polaris-Card__Header polaris-pd-rl-0">
+                                                            <div class="Polaris-Stack Polaris-Stack--alignmentBaseline">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                                                    <h2>CTR</h2>
+                                                                </div>
+                                                                <div class="Polaris-Stack__Item">
+                                                                    <div class="Polaris-ButtonGroup">
+                                                                        <div class="Polaris-ButtonGroup__Item Polaris-ButtonGroup__Item--plain">
+                                                                            <span class="acceptanceFunnelRateCompareCTR"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Polaris-Layout__Section Polaris-Layout__Section--secondary customeHeight custome_margin_top">
+                                                <div class="Polaris-Card">
+                                                    <div class="Polaris-Card__Header TooltipRPParentDiv">
+                                                        <h2 class="Polaris-Heading">AOV increase</h2>
+                                                                                                                    <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                                  data-tippy-content="Average order value from PreConvert"
+                                                                  data-tippy-theme="light" data-tippy-arrow="false"
+                                                                  data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20"><path fill-rule="evenodd"
+                                                                                                  d="M11 11H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 4h2v-2H9v2zm1-13a8 8 0 100 16 8 8 0 000-16z"
+                                                                                                  fill="#5C5F62"></path></svg></span>
+                                                                                                            </div>
+                                                    <div class="Polaris-Card__Section">
+                                                        <div class="Polaris-Stack__Item">
+                                                            <div class="Polaris-Stack">
+                                                                <div class="Polaris-Stack__Item Polaris-Stack__Item--fill funnel-analytic-sec">
+                                                                    <p class="SkeletonBodyText Polaris-DisplayText Polaris-DisplayText--sizeLarge aovIncrease"></p>
+                                                                    <div class="polaris-display-icon">
+                                                                    <span class="Polaris-Icon">
+                                                                         <div class="polaris-analytics-icon-success aovIncreaseSuccessIcon" style="display: none">
+                                                                        <svg viewBox="0 0 20 20"
+                                                                             class="Polaris-Icon__Svg_375hu"
+                                                                             focusable="false" aria-hidden="true"><path
+                                                                                    d="M11 17V5.414l3.293 3.293a.999.999 0 1 0 1.414-1.414l-5-5a.999.999 0 0 0-1.414 0l-5 5a.997.997 0 0 0 0 1.414.999.999 0 0 0 1.414 0L9 5.414V17a1 1 0 1 0 2 0z"></path></svg>
+
+                                                                         </div>
+                                                                        <div class="polaris-analytics-icon-critical aovIncreaseCriticalIcon"
+                                                                             style="display: none">
+                                                                            <svg viewBox="0 0 20 20"
+                                                                                 xmlns="http://www.w3.org/2000/svg"><path
+                                                                                        d="M10.707 17.707l5-5a.999.999 0 10-1.414-1.414L11 14.586V3a1 1 0 10-2 0v11.586l-3.293-3.293a.999.999 0 10-1.414 1.414l5 5a.999.999 0 001.414 0z"/></svg>
+                                                                        </div>
+
+                                                                    </span>
+                                                                        <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall aovIncreaseCompare custome_smallsize">
+                                                                            0.00%</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shopify fade explore-free-modal modal" id="free_themes_model" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content custome_modal-class">
+                                            <!--free template model content start-->
+                                            <div class="free_themes_model" style="display: none">
+                                                <div class="Polaris-Modal-Header">
+                                                    <div class="Polaris-Modal-Header__Title">
+                                                        <h2 class="Polaris-DisplayText Polaris-DisplayText--sizeSmall">Explore free funnels</h2>
+                                                    </div>
+                                                    <button class="Polaris-Modal-CloseButton" aria-label="Close"
+                                                            data-dismiss="modal">
+                                        <span class="close shopify-close-btn Polaris-Icon Polaris-Icon--colorBase Polaris-Icon--applyColor">
+                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false"
+                                                 aria-hidden="true">
+                                            <path d="M11.414 10l6.293-6.293a1 1 0 1 0-1.414-1.414L10 8.586 3.707 2.293a1 1 0 0 0-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 1 0 1.414 1.414L10 11.414l6.293 6.293A.998.998 0 0 0 18 17a.999.999 0 0 0-.293-.707L11.414 10z"></path>
+                                            </svg>
+                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="ui-stack ui-stack--wrap ui-stack--distribution-center ui-stack--alignment-center Polaris-TextContainer">
+                                                        <div class="box-new-create">
+              <div class="temlateDiscription" style="display:none;"><p>This template is optimized for <strong>maximum conversions</strong> from the thank you page.</p><p>Take your one-time customers and turn them into returning ones with some of our highest converting features:</p><ul><li>Product recommendations-&nbsp;<ul><li>Give <strong><span class="pre_funn_disc" data-discount="33">9.9</span></strong><strong>%</strong> off for customers buying directly from the thank you page</li><li>We recommend adding product reviews from your reviews app through the <strong>Settings&gt; General settings</strong> page.</li></ul></li><li>Pop up with timer-&nbsp;<ul><li>Give <strong><span class="pre_funn_disc" data-discount="100">30</span></strong><strong>%</strong> off for customers going back to the store with an eye catching pop up</li></ul></li><li>Product upsell<ul><li>Give <strong><span class="pre_funn_disc" data-discount="50">15</span></strong><strong>%</strong> off for customers buying the most expansive product from the original order again</li></ul></li><li>Birthday subscription-&nbsp;<ul><li>collect customer&#39;s birthdays</li><li>We recommend syncing this data with your email and SMS app of choice, through the <strong>Settings&gt; General settings&nbsp;</strong>page</li></ul></li><li>Social sharing-<ul><li>Invite customers to share their order and get more social engagement&nbsp;</li></ul></li><li>Order tracking-<ul><li>Add a 17Track tracking widget directly to the thank you page</li></ul></li></ul></div>
+            <div class="box-new-create-image" style="">
+                <a href="javascript:void(0);" class="slider-modal-grid-item-template" data-page_id="689" data-template_title="Test pre made" data-dthumbnail="https://cdn.shopify.com/s/files/1/0569/9751/1351/t/1/assets/1623768886.jpg?v=1623768887" data-mthumbnail="https://cdn.shopify.com/s/files/1/0569/9751/1351/t/1/assets/1623768887.jpg?v=1623768888">
+                    <img src="https://cdn.shopify.com/s/files/1/0569/9751/1351/t/1/assets/1623768886.jpg?v=1623768887" class="real-create-img" alt="Free Template">
+                </a>
+            </div>
+            <div class="slider-modal-grid-item-desc">
+                <a href="javascript:void(0);" class="color-black slider-modal-grid-item-template" data-page_id="689" data-template_title="Test pre made" data-dthumbnail="https://cdn.shopify.com/s/files/1/0569/9751/1351/t/1/assets/1623768886.jpg?v=1623768887" data-mthumbnail="https://cdn.shopify.com/s/files/1/0569/9751/1351/t/1/assets/1623768887.jpg?v=1623768888">
+                <span class="">Test pre made</span>
+                    </a>
+            </div>
+        </div>                                                        <input type="hidden" class="funnel_location" value="Dashboard">
+                                                        <div class="box-new-create">
+                                                            <div class="box-new-create-image" style="">
+                                                                <a href="javascript:void(0);" class=""
+                                                                   onclick="createNewFunnel(this, '0', 'Funnel name')"
+                                                                   data-page_id="0" data-template_title="Empty template">
+                                                                    <img src="assets/img/onboarding_blank_page.svg"
+                                                                         class="free-create-img" alt="Free Template">
+                                                                </a>
+                                                            </div>
+                                                            <div class="slider-modal-grid-item-desc">
+                                                                <a href="javascript:void(0);" class="color-black"
+                                                                   onclick="createNewFunnel(this, '0', 'Funnel name')"
+                                                                   data-page_id="0" data-template_title="Empty template">
+                                                                    <span>Empty funnel</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer  polaris_css custome_explor_popup Polaris-Modal-Footer">
+                                                    <div class="Polaris-Modal-Footer__FooterContent">
+                                                        <div class="Polaris-Stack Polaris-Stack--alignmentCenter">
+                                                            <div class="Polaris-Stack__Item Polaris-Stack__Item--fill"></div>
+                                                            <div class="Polaris-Stack__Item">
+                                                                <div class="Polaris-ButtonGroup">
+                                                                    <div class="Polaris-ButtonGroup__Item">
+                                                                        <button type="button" class="Polaris-Button"
+                                                                                data-dismiss="modal"><span
+                                                                                    class="Polaris-Button__Content"><span>Close</span></span>
+                                                                        </button>
+                                                                        <div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--free funnel model content end-->
+                                            <!--free funnel description model content start-->
+                                            <div class="free-theme-desc-model premade_funnel_body" style="display: none;">
+                                                <div class="Polaris-Modal-Header">
+                                                    <div class="Polaris-Modal-Header__Title">
+                                                        <a href="javascript:void(0)"
+                                                           class="free-theme-back custome_breadcrumbs"
+                                                           data-polaris-unstyled="true">
+                                            <span class="Polaris-Breadcrumbs__Icon">
+                                                <span class="Polaris-Icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M17 8.99976H5.41401L8.70701 5.70676C9.09801 5.31576 9.09801 4.68376 8.70701 4.29276C8.31601 3.90176 7.68401 3.90176 7.29301 4.29276L2.29301 9.29276C1.90201 9.68376 1.90201 10.3158 2.29301 10.7068L7.29301 15.7068C7.48801 15.9018 7.74401 15.9998 8.00001 15.9998C8.25601 15.9998 8.51201 15.9018 8.70701 15.7068C9.09801 15.3158 9.09801 14.6838 8.70701 14.2928L5.41401 10.9998H17C17.553 10.9998 18 10.5518 18 9.99976C18 9.44776 17.553 8.99976 17 8.99976Z"
+                                                          fill="#5C5F62"/>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                                            <h4 class="modal-title Polaris-DisplayText Polaris-DisplayText--sizeSmall">Simple</h4>
+                                                        </a>
+                                                    </div>
+                                                    <button class="Polaris-Modal-CloseButton" aria-label="Close"
+                                                            data-dismiss="modal">
+                                        <span class="close shopify-close-btn Polaris-Icon Polaris-Icon--colorBase Polaris-Icon--applyColor">
+                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false"
+                                                 aria-hidden="true">
+                                            <path d="M11.414 10l6.293-6.293a1 1 0 1 0-1.414-1.414L10 8.586 3.707 2.293a1 1 0 0 0-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 1 0 1.414 1.414L10 11.414l6.293 6.293A.998.998 0 0 0 18 17a.999.999 0 0 0-.293-.707L11.414 10z"></path>
+                                            </svg>
+                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body polaris_css custome_explor_popup"
+                                                     style="display: none;">
+                                                    <div class="free-themes-modal-details">
+                                                        <div class="free-themes-modal-images">
+                                                            <img data-src="" alt="Simple - Light" title="Simple - Light"
+                                                                 data-handle="simple--light"
+                                                                 class="free-themes-modal-image free-themes-modal-image--is-visible"
+                                                                 src="">
+                                                        </div>
+                                                        <div class="free-themes-modal-details-info">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer polaris_css custome_explor_popup">
+                                                    <div class="Polaris-ButtonGroup" style="float: right;">
+                                                                                                                    <div class="Polaris-ButtonGroup__Item">
+                                                <span class="Polaris-Icon Polaris-Icon--colorBlack Polaris-Icon--isColored marginRightZero"
+                                                      data-tippy-content="Let us know the biggest % discount you are willing to offer and we will optimize your funnel accordingly"
+                                                      data-tippy-theme="light" data-tippy-arrow="false"
+                                                      data-tippy-duration="0" data-tippy-delay="[0, 0]"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 18 18" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M0 9C0 4.0302 4.0302 0 9 0C13.9707 0 18 4.0302 18 9C18 13.9707 13.9707 18 9 18C4.0302 18 0 13.9707 0 9ZM10.0125 10.8018H8.0901V10.6749C8.0991 8.9055 8.5329 8.6463 9.3267 8.1711C9.4104 8.1207 9.4977 8.0685 9.5904 8.0109C10.2474 7.5978 10.7532 7.0767 10.7532 6.3162C10.7532 5.463 10.0845 4.9086 9.2538 4.9086C8.4879 4.9086 7.7625 5.2668 7.713 6.2883H5.6736C5.7276 4.2237 7.362 3.15 9.2646 3.15C11.34 3.15 12.7692 4.4523 12.7692 6.2892C12.7692 7.533 12.1437 8.3484 11.1447 8.946L10.9305 9.0756C10.2195 9.5031 10.0224 9.6219 10.0125 10.6749V10.8V10.8018ZM10.1655 13.5126C10.1618 13.8283 10.0348 14.13 9.81162 14.3533C9.58848 14.5766 9.28687 14.7038 8.9712 14.7078C8.81398 14.7088 8.65813 14.6785 8.51269 14.6188C8.36725 14.559 8.23511 14.471 8.12394 14.3599C8.01276 14.2487 7.92476 14.1166 7.86503 13.9711C7.80531 13.8257 7.77504 13.6698 7.776 13.5126C7.77623 13.3562 7.80739 13.2014 7.86767 13.0571C7.92795 12.9128 8.01616 12.7819 8.12724 12.6718C8.23832 12.5617 8.37007 12.4747 8.51491 12.4157C8.65975 12.3568 8.81482 12.327 8.9712 12.3282C9.612 12.3282 10.161 12.861 10.1664 13.5126H10.1655Z"
+                                                          fill="#212B36"/>
+                                                    </svg></span>
+                                                            </div>
+                                                                                                                <div class="Polaris-ButtonGroup__Item">
+                                                            <span>Max discount:</span>
+                                                        </div>
+                                                        <div class="Polaris-ButtonGroup__Item">
+                                                            <div class="Polaris-TextField text-field"><input
+                                                                        class="Polaris-TextField__Input discountDataPremadeFunnel numberFieldInput"
+                                                                        min="0" max="100" placeholder="Max"
+                                                                        aria-labelledby="TextField3Label"
+                                                                        aria-invalid="false" type="number" value="30">
+                                                                <div class="Polaris-TextField__Prefix mr-3">%</div>
+                                                                <div class="Polaris-TextField__Backdrop"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Polaris-ButtonGroup__Item">
+                                                            <button onclick="createPremadeNewFunnel(this)"
+                                                                    id="freeTemplateData" data-page_id="0" type="button"
+                                                                    class="Polaris-Button Polaris-Button--primary publishDiscountPremade">
+                                                                <span class="Polaris-Button__Content"><span>Add</span></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--free funnel description model content end-->
+                                        </div>
+                                        <!-- Modal content-->
+                                    </div>
+                                </div>
+                                <!-- Default funnel action popup start-->
+                                <div class="Polaris-Popover__Wrapper" style="display: none">
+                                    <div id="popover-content-default-funnel-action-list" tabindex="-1"
+                                         class="Polaris-Popover__Content">
+                                        <ul class="action-list-menu">
+                                            <li value="funnel-duplicate">
+                                                <button class="Polaris-ActionList__Item">
+                                                    <div class="Polaris-ActionList__Content popover-font">Duplicate</div>
+                                                </button>
+                                            </li>
+                                            <li value="funnel-rename">
+                                                <button class="Polaris-ActionList__Item">
+                                                    <div class="Polaris-ActionList__Content popover-font">Rename</div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Default funnel action popup end-->
+                                <!--funnel action popup start-->
+                                <div class="Polaris-Popover__Wrapper" style="display: none">
+                                    <div id="popover-content-funnel-action-list" tabindex="-1"
+                                         class="Polaris-Popover__Content">
+                                        <ul class="action-list-menu">
+                                            <li value="funnel-duplicate">
+                                                <button class="Polaris-ActionList__Item">
+                                                    <div class="Polaris-ActionList__Content popover-font">Duplicate</div>
+                                                </button>
+                                            </li>
+                                            <li value="funnel-rename">
+                                                <button class="Polaris-ActionList__Item">
+                                                    <div class="Polaris-ActionList__Content popover-font">Rename</div>
+                                                </button>
+                                            </li>
+                                            <li value="funnel-delete" data-limit="5">
+                                                <button class="Polaris-ActionList__Item">
+                                                    <div class="Polaris-ActionList__Content popover-font">Delete</div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--funnel action popup end-->
+                                <!--Rename popup start-->
+                                <div class="shopify fade modal" id="funnel-rename-modal" role="dialog">
+                                    <div class="modal-dialog">
+                                        <form name='rename_frm' onsubmit="renameFunnel(this, event);"
+                                              class="polaris_css custome-border-radius-rename">
+                                            <input type="hidden" id="funnelId" name="funnel_id" value="">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <!--rename model content start-->
+                                                <div class="Polaris-Modal-Header">
+                                                    <div class="Polaris-Modal-Header__Title"><h2
+                                                                class="Polaris-DisplayText Polaris-DisplayText--sizeSmall">Rename funnel</h2>
+                                                    </div>
+                                                    <button class="Polaris-Modal-CloseButton" aria-label="Close"
+                                                            data-dismiss="modal">
+                                        <span class="close shopify-close-btn Polaris-Icon Polaris-Icon--colorBase Polaris-Icon--applyColor">
+                                            <svg viewBox="0 0 20 20" class="Polaris-Icon__Svg" focusable="false"
+                                                 aria-hidden="true">
+                                            <path d="M11.414 10l6.293-6.293a1 1 0 1 0-1.414-1.414L10 8.586 3.707 2.293a1 1 0 0 0-1.414 1.414L8.586 10l-6.293 6.293a1 1 0 1 0 1.414 1.414L10 11.414l6.293 6.293A.998.998 0 0 0 18 17a.999.999 0 0 0-.293-.707L11.414 10z"></path>
+                                            </svg>
+                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="Polaris-Labelled__LabelWrapper">
+                                                        <div class="Polaris-Label"><label
+                                                                    class="Polaris-Label__Text">Provide a new name for this funnel</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Polaris-TextField Polaris-TextField--hasValue">
+                                                        <input type="text" id="funnelTitle" name="funnel_title"
+                                                               class="Polaris-TextField__Input"
+                                                               aria-labelledby="TextField4Label" aria-invalid="false"
+                                                               value="">
+                                                        <div class="Polaris-TextField__Backdrop"></div>
+                                                    </div>
+                                                    <div class="Polaris-Labelled__LabelWrapper error" style="display:none;">
+                                                        <div class="Polaris-Label"><label
+                                                                    class="Polaris-Label__Text error"></label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="Polaris-ButtonGroup" style="float: right;">
+                                                        <div class="Polaris-ButtonGroup__Item">
+                                                            <button type="button" class="Polaris-Button"
+                                                                    data-dismiss="modal"><span
+                                                                        class="Polaris-Button__Content"><span>Cancel</span></span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="Polaris-ButtonGroup__Item">
+                                                            <button id="rename_frm_btn" type="submit"
+                                                                    class="Polaris-Button Polaris-Button--primary"><span
+                                                                        class="Polaris-Button__Content"><span>Rename</span></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--rename funnel model content end-->
+                                            </div>
+                                            <!-- Modal content-->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Rename popup end-->
+                                <script>
+                                    $(document).ready(function () {
+                                        $('.dd-empty').css('display', 'none');
+                                        displayFunnelListing(5);
+                                        countFunnelRevenue();
+                                        funnelAdditionalAnalytics();
+                                        // funnelCustomerActivityReport(10, 1, 1);
+                                    });
+                                    $(".report-daterangepickerTempImp").on("apply.daterangepicker", function (ev, picker) {
+                                        displayFunnelListing(5);
+                                        countFunnelRevenue();
+                                        funnelAdditionalAnalytics();
+                                        // funnelCustomerActivityReport(10, 1, 1);
+                                        popover_call();
+                                    });
+                                </script>
+                                                            </div>
+                        </div>
+
+<!--<div class="polaris_css Polaris-Page Polaris-Page--fullWidth">           -->
+<!--<div class="Polaris-Layout">-->
+<!--  <div class="Polaris-Layout__Section Polaris-Layout__Section--primary primary_block">-->
+<!--     <div class=" primary_page">-->
+<!--        <div class="Polaris-Layout">-->
+<!--            --><!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--</div>-->
+<!--</div>-->
+<!-- End ads Banner -->
+<!-- footer -->
+<div class="Polaris-Layout__Section custom-footer-polaris">
+   <div class="Polaris-FooterHelp">
+      <div class="Polaris-FooterHelp__Content">
+         <div class="Polaris-FooterHelp__Text">
+            PreConvert &#169; 2021 - Developed by <a target="_blank" href="https://www.stilyoapps.info/">Stilyo Apps</a> team         </div>
+      </div>
+   </div>
+</div>
+<!-- End footer -->
+<div id="PolarisPortalsContainer"></div>
+<!-- End Dashboard-page -->
+</div>
+</div>
+<!--Tool tips pop up start-->
+<div class="modal fade bd-example-modal-lg tooltippopup-modal shopify explore-free-modal " id="tooltipsPopup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg polaris_css" role="document">
+      <div class="modal-content custome_modal-class">
+         <div class="modal-header marginBottom20px Polaris-Modal-Header">
+            <div class="ttModalHeaderText Polaris-Modal-Header__Title"></div>
+            <button type="button" class="Polaris-Modal-CloseButton" data-dismiss="modal" aria-label="Close"><span class="remove-icon" aria-label=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M11.4141 10.0001L17.7071 3.70709C17.8946 3.51959 17.9999 3.26527 17.9999 3.00009C17.9999 2.73492 17.8946 2.4806 17.7071 2.29309C17.5196 2.10559 17.2653 2.00024 17.0001 2.00024C16.7349 2.00024 16.4806 2.10559 16.2931 2.29309L10.0001 8.58609L3.70709 2.29309C3.61425 2.20025 3.50403 2.1266 3.38272 2.07635C3.26141 2.02611 3.1314 2.00024 3.00009 2.00024C2.86879 2.00024 2.73877 2.02611 2.61747 2.07635C2.49616 2.1266 2.38594 2.20025 2.29309 2.29309C2.10559 2.4806 2.00024 2.73492 2.00024 3.00009C2.00024 3.26527 2.10559 3.51959 2.29309 3.70709L8.58609 10.0001L2.29309 16.2931C2.10559 16.4806 2.00024 16.7349 2.00024 17.0001C2.00024 17.2653 2.10559 17.5196 2.29309 17.7071C2.4806 17.8946 2.73492 17.9999 3.00009 17.9999C3.26527 17.9999 3.51959 17.8946 3.70709 17.7071L10.0001 11.4141L16.2931 17.7071C16.3857 17.8003 16.4959 17.8742 16.6172 17.9247C16.7386 17.9752 16.8687 18.0011 17.0001 18.0011C17.1315 18.0011 17.2616 17.9752 17.3829 17.9247C17.5043 17.8742 17.6144 17.8003 17.7071 17.7071C17.8 17.6143 17.8738 17.5041 17.9241 17.3828C17.9744 17.2615 18.0003 17.1314 18.0003 17.0001C18.0003 16.8688 17.9744 16.7387 17.9241 16.6174C17.8738 16.4961 17.8 16.3859 17.7071 16.2931L11.4141 10.0001Z" fill="#5C5F62"></path>
+                                </svg></span></button>
+         </div>
+         <div class="modal-body" id="tooltipsPopup_modal_id"></div>
+         <div class="modal-footer custome_explor_popup Polaris-Modal-Footer">
+            <div class="ttModalFooterText tt-modal-content"></div>
+            <div class="Polaris-ButtonGroup">
+               <div class="Polaris-ButtonGroup__Item"><button type="button" class="Polaris-Button"><span class="Polaris-Button__Content" data-dismiss="modal"><span>Close</span></span></button></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!--Tool tips pop up end-->
+</body>
+
+</html>
